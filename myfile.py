@@ -7,4 +7,4 @@ def powOfTwo(x):
     else:
         return False
 
-print(powOfThree(17))
+#print(powOfThree(17))
