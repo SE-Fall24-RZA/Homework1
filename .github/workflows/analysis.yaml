@@ -1,0 +1,25 @@
+name: analysis
+run-name: Running Static Analysis Tools
+on: [push]
+jobs:
+  run_static_analysis_hw2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: autopep8
+      run: |
+        pip install --upgrade autopep8
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec autopep8 --in-place --aggressive --aggressive '{}' \;
+    - name: pyright
+      run: |
+        pip install pyright
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec pyright '{}' \;
+    - name: pylint
+      run: |
+        pip install pylint
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec pylint '{}' \;
+  

@@ -2,7 +2,7 @@ name: tests
 run-name: Running tests
 on: [push]
 jobs:
-  run_pytest:
+  run_pytest_hw1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -13,4 +13,19 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest pytest-cov
-        pytest test_myfile.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        pytest hw1/test_myfile.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+  run_pytest_hw2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Test with pytest
+      run: |
+        pip install pytest pytest-cov
+        pytest hw2/test_cases.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+  
+
+  
