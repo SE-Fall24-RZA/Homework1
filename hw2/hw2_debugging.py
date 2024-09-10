@@ -2,6 +2,8 @@ import rand
 
 
 def merge_sort(arr):
+    if len(arr)==0:
+        return arr
     if len(arr) == 1:
         return arr
     half = len(arr) // 2
