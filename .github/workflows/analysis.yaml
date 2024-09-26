@@ -34,7 +34,7 @@ jobs:
         #   ...
         # 
         # Required
-        lint-path:
+        lint-path: |
           src
           hw2/hw2_debugging.py
         
