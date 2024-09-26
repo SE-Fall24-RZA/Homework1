@@ -8,4 +8,4 @@ Static Analysis:\
 ![Autopep8](https://img.shields.io/badge/autopep8-formatted-g)
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
 [![pyright-checked](https://img.shields.io/badge/pyright-checked-green)](https://github.com/microsoft/pyright/blob/main/docs/img/pyright_badge.svg)
-![PyLint](https://github.com/SE-Fall24-RZA/Homework1/blob/homework2/.github/workflows/analysis.yaml/pylint.svg?event=push)
+![PyLint](https://github.com/SE-Fall24-RZA/Homework1/actions/workflows/pylint.yaml/badge.svg)

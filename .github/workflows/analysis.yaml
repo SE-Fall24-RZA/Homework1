@@ -18,7 +18,7 @@ jobs:
       run: |
         pip install pyright
         find -type f -name '*.py' ! -path '*/migrations/*' -exec pyright '{}' \;
-    - name: pylint
-      run: |
-        pip install pylint
-        find -type f -name '*.py' ! -path '*/migrations/*' -exec pylint '{}' \;
+    # - name: pylint
+    #   run: |
+    #     pip install pylint
+    #     find -type f -name '*.py' ! -path '*/migrations/*' -exec pylint '{}' \;
