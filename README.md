@@ -10,3 +10,4 @@ Static Analysis:\
 [![pyright-checked](https://img.shields.io/badge/pyright-checked-green)](https://github.com/microsoft/pyright/blob/main/docs/img/pyright_badge.svg)
 ![PyLint](https://github.com/SE-Fall24-RZA/Homework1/actions/workflows/pylint.yaml/badge.svg)
 ![Pyright](https://github.com/SE-Fall24-RZA/Homework1/actions/workflows/pyright.yaml/badge.svg)
+![Bandit](https://github.com/SE-Fall24-RZA/Homework1/actions/workflows/bandit.yaml/badge.svg)
