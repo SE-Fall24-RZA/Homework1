@@ -34,8 +34,7 @@ jobs:
         #   ...
         # 
         # Required
-        lint-path: |
-          src
+        lint-path:
           hw2/hw2_debugging.py
         
         # Version of the Python interpreter which will install all requirements of your project 
@@ -48,6 +47,8 @@ jobs:
         #
         # Optional, Default: README.md
         readme-path: README.md
+
+        requirements-path: hw2/requirements.txt
 
         # Text to display in the badge
         #
