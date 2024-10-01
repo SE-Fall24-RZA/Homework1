@@ -1,0 +1,16 @@
+name: pylint
+run-name: PyLint
+on: [push]
+jobs:
+  run_pylint_hw2:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: pylint
+      run: |
+        pip install pylint
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec pylint '{}' \;
